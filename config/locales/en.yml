@@ -1,33 +1,51 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   "true": "foo"
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  appTitle: "Recipe App"
+  common:
+    remove: "Remove"
+  recipes:
+    index:
+      new: "New Recipe"
+    show:
+      preparation_time: "Preparation time: "
+      cooking_time: "Cooking time: "
+      public: "Public"
+      generate_shopping_list: "Generate shopping list"
+      add_ingredient: "Add ingredient"
+      name: "Name"
+      quantity: "Quantity"
+      price: "Price"
+    new:
+      title: "New Recipe"
+    update:
+      success: "Recipe was successfully updated."
+      failure: "Recipe was not updated."
+    create:
+      success: "Recipe was successfully created."
+      failure: "Recipe was not created."
+    destroy:
+      success: "Recipe was successfully destroyed."
+      failure: "Recipe was not destroyed."
+    recipe:
+      confirm_delete: "Are you sure you want to delete this recipe?"
+  recipe_foods:
+    create:
+      success: "Ingredient was successfully added."
+      failure: "Ingredient was not added."
+    new:
+      submit: "Add ingredient"
+  foods:
+    create:
+      success: "Food was successfully created."
+      failure: "Food was not created."
+    destroy:
+      success: "Food was successfully destroyed."
+      failure: "Food was not destroyed."
+  shared:
+    nav:
+      login: "Login"
+      logout: "Logout"
+      signup: "Register"
+      public_recipes: "Public Recipes"
+      my_recipes: "My Recipes"
+      my_foods: "My Foods"
+      shopping_list: "My Shopping List"
